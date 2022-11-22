@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author mecopi
+ *
+ */
+module HotelCalifornia {
+}
