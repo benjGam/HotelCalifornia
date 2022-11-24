@@ -2,12 +2,10 @@ package fr.mecopi.hotelcalifornia;
 
 public class Main {
 
-	private static Client client;
-	
 	public static void main(String[] args) {
-		Utils.InitPrices();
-		Utils.InitRooms();
-		client = new Client();
+		Utils.InitPrices(); //Initialiazing prices
+		Utils.InitRooms(); //Initialiazing hostel rooms
+		new Client(); //Create new client object
 	}
 	
 }

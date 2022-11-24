@@ -5,15 +5,22 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>HotelCalifornia</name>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
+  	<plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.0</version>
         <configuration>
-          <release>13</release>
+            <archive>
+                <manifest>
+                    <addClasspath>true</addClasspath>
+                    <classpathPrefix>lib/</classpathPrefix>
+                    <mainClass>fr.mecopi.hotelcalifornia.Main</mainClass>
+                </manifest>
+            </archive>
         </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    </plugin>
+</plugins>
+    </build>
 </project>
