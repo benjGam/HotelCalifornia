@@ -18,18 +18,18 @@ public class Utils {
 	}
 	public static void InitRooms() 
 	{
-		for(int c = 0; c <= 6; c++) {
-			for(int p = 1; p <= 4; p++) {
-				try {
-					availablesRooms.add(new Room(c, p, prices.get(p-1).get(c-1)));
+		for(int c = 0; c <= 6; c++) { //for each category room
+			for(int p = 1; p <= 4; p++) { //for each prices
+				try { //Prevent index errors
+					availablesRooms.add(new Room(c, p, prices.get(p-1).get(c-1))); //Creating room with price and category
 				} catch (Exception e) {}
 			}
 		}
 	}
 	public static Room GetRoom(int capacity, int category) 
 	{
-		for(Room room : availablesRooms) {
-			if(room.getCapacity() == capacity && room.getCategory() == category) {
+		for(Room room : availablesRooms) { //for each available room
+			if(room.getCapacity() == capacity && room.getCategory() == category) { //If people count & category match
 				return room;
 			}
 		}

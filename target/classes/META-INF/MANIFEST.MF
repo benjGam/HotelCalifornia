@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 Built-By: mecopi
 Build-Jdk: 17.0.4.1
+Main-Class: fr.mecopi.hotelcalifornia.Main
 Created-By: Maven Integration for Eclipse
 
